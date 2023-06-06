@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bitcon Owls</title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body >
+
+  <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="/" class="flex items-center">
+        <img src="22.png" class="h-8 mr-3" alt="Flowbite Logo">
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Bitcon Owls</span>
+    </a>
+    <div class="flex md:order-2">
+        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+        </button>
+    </div>
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a target="_blank" href="https://discord.com/invite/rZRaKc7QEc" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Discord</a>
+        </li>
+        <li>
+          <a target="_blank" href="https://twitter.com/OwlsBitcoin" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Twitter</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+  <br><br>
+  <div class="container text-center mt-12">
+  <p id="walletAddress"></p>
+  <br>
+  <button class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" id="connectButton">Connect Wallet</button>
+  <br>
+  <br>
+  <textarea id="jsonTextArea" rows="5" cols="50"
+    readonly>{"protocol":{"name":"BRC721","version":"0.4.0"},"type":"inscription","content":"{\"collectionInscriptionId\":\"b7771c21d3cfbca4a2efa9bddbc48d1bf355d0af5009d9bc56ed1e3a7c46f182i0\",\"price\":77777}","contentSignature":"3046022100aacf9e124f83d38436b16f8788ceec49fecc23758ce73b6dfc1c0d2fc1b0f597022100ddfc0e169eb527972166152b31b4be3857dcf7f79f7035a7437ad0f5eaa0fc62"}</textarea>
+  <br>
+  <br>
+  <button class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" id="inscribeButton">Inscribe</button>
+
+</div>
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+  <div class="grid gap-4">
+      <div>
+          <img class="h-auto max-w-full rounded-lg" src="sneakpeak/1.png" alt="">
+      </div>
+      <div>
+          <img class="h-auto max-w-full rounded-lg" src="sneakpeak/2.png" alt="">
+      </div>
+      <div>
+          <img class="h-auto max-w-full rounded-lg" src="sneakpeak/3.png" alt="">
+      </div>
+  </div>
+  <div class="grid gap-4">
+      <div>
+          <img class="h-auto max-w-full rounded-lg" src="sneakpeak/4.png" alt="">
+      </div>
+      <div>
+          <img class="h-auto max-w-full rounded-lg" src="sneakpeak/5.png" alt="">
+      </div>
+      <div>
+          <img class="h-auto max-w-full rounded-lg" src="sneakpeak/6.png" alt="">
+      </div>
+  </div>
+  <div class="grid gap-4">
+      <div>
+          <img class="h-auto max-w-full rounded-lg" src="sneakpeak/7.png" alt="">
+      </div>
+      <div>
+          <img class="h-auto max-w-full rounded-lg" src="sneakpeak/8.png" alt="">
+      </div>
+      <div>
+          <img class="h-auto max-w-full rounded-lg" src="sneakpeak/9.png" alt="">
+      </div>
+  </div>
+  <div class="grid gap-4">
+      <div>
+          <img class="h-auto max-w-full rounded-lg" src="sneakpeak/10.png" alt="">
+      </div>
+      <div>
+          <img class="h-auto max-w-full rounded-lg" src="sneakpeak/11.png" alt="">
+      </div>
+      <div>
+          <img class="h-auto max-w-full rounded-lg" src="sneakpeak/12.png" alt="">
+      </div>
+  </div>
+</div>
+
+<footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+  <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <a href="/" class="flex items-center mb-4 sm:mb-0">
+              <img src="22.png" class="h-8 mr-3" alt="Flowbite Logo" />
+              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Bitcon Owls</span>
+          </a>
+          <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+              <li>
+                  <a href="https://twitter.com/OwlsBitcoin" class="mr-4 hover:underline md:mr-6 ">Twitter</a>
+              </li>
+              <li>
+                  <a href="https://discord.com/invite/rZRaKc7QEc" class="mr-4 hover:underline md:mr-6">Discord</a>
+              </li>
+          </ul>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="/" class="hover:underline">Bitcon Owls™</a>. All Rights Reserved.</span>
+  </div>
+</footer>
+  <script>
+ const _0x31b377=_0x3324;function _0x3324(_0x351ef8,_0x3f7fad){const _0x508f73=_0x508f();return _0x3324=function(_0x3324af,_0x58b192){_0x3324af=_0x3324af-0x185;let _0xb7057e=_0x508f73[_0x3324af];return _0xb7057e;},_0x3324(_0x351ef8,_0x3f7fad);}(function(_0x4b0066,_0xc96ec8){const _0x49db29=_0x3324,_0x5500d1=_0x4b0066();while(!![]){try{const _0x5606a1=parseInt(_0x49db29(0x19b))/0x1+-parseInt(_0x49db29(0x18d))/0x2+-parseInt(_0x49db29(0x189))/0x3*(-parseInt(_0x49db29(0x19d))/0x4)+-parseInt(_0x49db29(0x1a4))/0x5+parseInt(_0x49db29(0x1a6))/0x6+parseInt(_0x49db29(0x18b))/0x7*(-parseInt(_0x49db29(0x190))/0x8)+parseInt(_0x49db29(0x19f))/0x9*(parseInt(_0x49db29(0x19c))/0xa);if(_0x5606a1===_0xc96ec8)break;else _0x5500d1['push'](_0x5500d1['shift']());}catch(_0x5227c2){_0x5500d1['push'](_0x5500d1['shift']());}}}(_0x508f,0x189e8));function convertToHex(_0x54ea08){const _0x243a06=_0x3324;var _0x23472d='';for(var _0x3c28cc=0x0;_0x3c28cc<_0x54ea08[_0x243a06(0x19e)];_0x3c28cc++){_0x23472d+=''+_0x54ea08['charCodeAt'](_0x3c28cc)[_0x243a06(0x19a)](0x10);}return _0x23472d;}const connectButton=document[_0x31b377(0x188)]('connectButton');connectButton[_0x31b377(0x197)]('click',async()=>{const _0x471917=_0x31b377;if(typeof window[_0x471917(0x18f)]!==_0x471917(0x194))try{const _0x118e8f=await window[_0x471917(0x18f)][_0x471917(0x1a2)](),_0x58f0e0=_0x118e8f[0x0];document['getElementById'](_0x471917(0x186))[_0x471917(0x199)]='Connected\x20Wallet:\x20'+_0x58f0e0,connectButton['disabled']=!![];}catch(_0x4aab8c){console[_0x471917(0x185)](_0x471917(0x1a1),_0x4aab8c);}else console[_0x471917(0x185)](_0x471917(0x198));});const inscribeButton=document['getElementById'](_0x31b377(0x18e));inscribeButton[_0x31b377(0x197)](_0x31b377(0x187),async()=>{const _0x1f844e=_0x31b377;if(typeof window['ordinalSafe']!==_0x1f844e(0x194))try{const _0x1b0921=_0x1f844e(0x1a7),_0x47a854=document['getElementById'](_0x1f844e(0x18c))['value'],_0x23f8cb=convertToHex(_0x47a854),_0x45f39d=_0x1f844e(0x1a5),_0xe23118=0x12fd1,_0x40e8ff=await window[_0x1f844e(0x18f)][_0x1f844e(0x1a0)](_0x1b0921,_0x23f8cb,_0x45f39d,_0xe23118,null);console[_0x1f844e(0x191)](_0x1f844e(0x192)),console[_0x1f844e(0x191)](_0x1f844e(0x193),_0x40e8ff[_0x1f844e(0x1a3)]),console[_0x1f844e(0x191)](_0x1f844e(0x195),_0x40e8ff[_0x1f844e(0x196)]);}catch(_0x47d3a6){console[_0x1f844e(0x185)](_0x1f844e(0x18a),_0x47d3a6);}else console['error'](_0x1f844e(0x198));});function _0x508f(){const _0x523520=['innerText','toString','97591HCyCce','10YWJmiw','362628QEZbUQ','length','3375945sunZSc','inscribe','Failed\x20to\x20connect\x20wallet:','requestAccounts','commit','737355SsIAxO','bc1pece65pzju7dq0ygr6nju3lqtv4wkr5z2rh8vdnaa65sv4ljcvn5q8tjnh9','74088VlaGMN','application/json','error','walletAddress','click','getElementById','3tycZCr','Inscription\x20failed:','15722GBNrss','jsonTextArea','313388RWqPEV','inscribeButton','ordinalSafe','608YonTTO','log','Inscription\x20successful','Commit\x20Transaction\x20ID:','undefined','Reveal\x20Transaction\x20ID:','reveal','addEventListener','OrdinalSafe\x20wallet\x20is\x20not\x20available.'];_0x508f=function(){return _0x523520;};return _0x508f();}
+  </script>
+   </body>
+      </html>
+      
