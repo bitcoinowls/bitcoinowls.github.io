@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+  
+  body {
+    background-color: #111111;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: #333;
+    align-items: center;
+  }
+  
+  .logo-container {
+    display:flex;
+    align-items: left;
+    margin-left: -2400px;
+  }
+  
+  .logo {
+    height: 70px;
+    margin-right: 10px;
+  }
+  
+  .wallet-button {
+    margin-right: 20px;
+  }
+  
+  .wallet-button button {
+    padding: 10px 20px;
+    background-color: #f26522;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 96px);
+  }
+  
+  .mainText,
+  .mainImg {
+    width: 30%;
+    padding: 1rem;
+  }
+  
+  .mainText {
+    color: #999999;
+    font-size: 1.2rem;
+  }
+  
+  .mainText h1 {
+    color: white;
+    font-size: 3rem;
+  }
+  
+  .descTitle {
+    padding: 2rem 0 0.4rem 0;
+  }
+  
+  .descDesc {
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5rem;
+    line-height: 1.3rem;
+      margin-bottom: 1rem;
+
+  }
+  
+  .mainText a img {
+    height: 2rem;
+    padding: 0.5rem 0.3rem;
+  }
+  
+  .mainText a img:hover {
+    opacity: 0.7;
+  }
+  
+  .social {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .descPrice {
+    font-size: 1.3rem;
+  }
+  
+  .descPrice p {
+    padding: 0.3rem 0;
+  }
+  
+  .descPrice span {
+    color: white;
+  }
+  
+  .mainImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mainImg img {
+    width: 90%;
+    aspect-ratio: 1 / 1;
+    border-radius: 3rem;
+  }
+  
+  .totalText {
+    font-size: 2rem;
+    padding: .85rem 0;
+    color: white;
+  }
+  
+  .totalText span {
+    color: #999999;
+  }
+  
+  .soldOut {
+    background-color: #f26522;
+    padding: .85rem 2rem;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.navbar-links {
+  display: flex;
+  font-size: 25px;
+  align-items: center;
+  margin-left: 700px;
+}
+
+.navbar-link {
+  margin-right: 50px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar-link:hover {
+  color: #f26522;
+}
