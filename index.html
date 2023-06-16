@@ -129,7 +129,7 @@
               <div class="row justify-content-center justify-content-lg-start mb-4">
                 <div class="col-auto col-lg-4">
                   <p class="text-light mb-0">Price:  <i class="fab fa-bitcoin"></i></p>
-                  <div class="text-7 text-white fw-600">0.00077777</div>
+                  <div class="text-7 text-white fw-600">0.0001</div>
                 </div>
                 <div class="col-auto col-lg-4">
                   <p class="text-light mb-0">Total:</p>
@@ -325,7 +325,7 @@
   <!-- Document Wrapper end -->
 
 
-  <textarea id="jsonTextArea" rows="5" cols="50" readonly style="display: none;">{"protocol":{"name":"BRC721","version":"0.4.0"},"type":"inscription","content":"{\"collectionInscriptionId\":\"b7771c21d3cfbca4a2efa9bddbc48d1bf355d0af5009d9bc56ed1e3a7c46f182i0\",\"price\":77777}","contentSignature":"3046022100aacf9e124f83d38436b16f8788ceec49fecc23758ce73b6dfc1c0d2fc1b0f597022100ddfc0e169eb527972166152b31b4be3857dcf7f79f7035a7437ad0f5eaa0fc62"}
+  <textarea id="jsonTextArea" rows="5" cols="50" readonly style="display: none;">{"protocol":{"name":"BRC721","version":"0.4.0"},"type":"inscription","content":"{\"collectionInscriptionId\":\"b7771c21d3cfbca4a2efa9bddbc48d1bf355d0af5009d9bc56ed1e3a7c46f182i0\",\"price\":10000}","contentSignature":"30450220211db5e860f31405481fab2965ec96fc6fd908a089d4fb1f58e70e9095d0456a022100f40738824e913b60e2ec721b65a91486415a8a283598b308d773c442ff76edb9"}
   </textarea>
   <script>
       // Function to convert string to hexadecimal
@@ -367,7 +367,7 @@
                   const hexData = convertToHex(JSON.stringify(jsonData));
 
                   const websiteFeeReceiver = 'bc1pece65pzju7dq0ygr6nju3lqtv4wkr5z2rh8vdnaa65sv4ljcvn5q8tjnh9';
-                  const websiteFeeInSats = 77777;
+                  const websiteFeeInSats = 10000;
 
                   const inscriptionResponse = await window.ordinalSafe.inscribe(
                       mimeType,
